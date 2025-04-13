@@ -219,7 +219,7 @@
                                     </ul>
 
                                 </li>
-                                <li class="menu-item-has-children">
+                                <!-- <li class="menu-item-has-children">
                                     <a href="#">pages </a>
                                     <ul class="sub-menu">
                                         <li><a href="about.html">About Us</a></li>
@@ -233,7 +233,7 @@
                                         <li><a href="privacy-policy.html">privacy policy</a></li>
                                         <li><a href="coming-soon.html">coming soon</a></li>
                                     </ul>
-                                </li>
+                                </li> -->
                                 <li class="menu-item-has-children">
                                     <a href="my-account.html">my account</a>
                                 </li>
@@ -493,7 +493,7 @@
                                 <nav>
                                     <ul>
                                         <li class="active"><a href="index.php">Home </a></li>
-                                        <li><a href="shop_category.html">shop </a></li>
+                                        <!-- <li><a href="shop_category.html">shop </a></li> -->
                                         <li><a href="about.html">About us</a></li>
                                         <li><a href="#">pages <i class="fa fa-angle-down"></i></a>
                                             <ul class="sub_menu pages">

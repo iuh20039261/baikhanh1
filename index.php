@@ -513,7 +513,7 @@ if (isset($_REQUEST['idSP'])) {
                 </div>
             </div>
         </div>
-        <!-- <div class="footer_bottom">
+        <div class="footer_bottom">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
@@ -533,7 +533,7 @@ if (isset($_REQUEST['idSP'])) {
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
     </footer>
     <!--footer area end-->
 
