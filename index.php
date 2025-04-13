@@ -104,7 +104,7 @@ if (isset($_REQUEST['idSP'])) {
                         </div>
                         <div class="col-lg-4">
                             <div class="logo">
-                                <a href="index.php"><img src="assets/img/logo/logo.png" alt=""></a>
+                                <a href="index.php"><h3>Shop phụ kiện điện thoại</h3></a>
                             </div>
                         </div>
                         <div class="col-lg-4">
@@ -112,7 +112,7 @@ if (isset($_REQUEST['idSP'])) {
                                 <div class="cart_link">
                                     <a href="?dathang"><i class="fa fa-shopping-basket"></i>2 item(s)</a>
                                     <!--mini cart-->
-                                    <div class="mini_cart">
+                                    <!-- <div class="mini_cart">
                                         <div class="cart_item top">
                                             <div class="cart_img">
                                                 <a href="?dathang"><img src="assets/img/s-product/product.jpg"
@@ -161,7 +161,7 @@ if (isset($_REQUEST['idSP'])) {
                                             <a href="index.php?dathang">Checkout</a>
                                         </div>
 
-                                    </div>
+                                    </div> -->
                                     <!--mini cart end-->
                                 </div>
                             </div>
@@ -253,7 +253,7 @@ if (isset($_REQUEST['idSP'])) {
                         </div>
                     </div>
                     <div class="logo_container">
-                        <a href="index.php"><img src="assets/img/logo/logo.png" alt=""></a>
+                        <a href="index.php"><h3>Shop phụ kiện điện thoại</h3></a>
                     </div>
                     <div class="right_menu">
                         <div class="main_menu">
@@ -313,7 +313,7 @@ if (isset($_REQUEST['idSP'])) {
     <!--header area end-->
 
     <!--slider area start-->
-    <div class="slider_area slider_style home_three_slider owl-carousel">
+    <!-- <div class="slider_area slider_style home_three_slider owl-carousel">
         <div class="single_slider" data-bgimg="assets/img/slider/slider4.jpg">
             <div class="container">
                 <div class="row align-items-center">
@@ -353,7 +353,7 @@ if (isset($_REQUEST['idSP'])) {
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!--slider area end-->
 
     <!--banner area start-->
@@ -363,21 +363,21 @@ if (isset($_REQUEST['idSP'])) {
                 <div class="col-lg-4 col-md-6">
                     <div class="banner_area">
                         <div class="banner_thumb">
-                            <a href="shop.html"><img src="assets/img/bg/banner8.jpg" alt="#"></a>
+                            <img src="assets/img/bg/pkdt1.jpg" alt="#"></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="banner_area">
                         <div class="banner_thumb">
-                            <a href="shop.html"><img src="assets/img/bg/banner9.jpg" alt="#"></a>
+                            <img src="assets/img/bg/pkdt2.jpg" alt="#"></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="banner_area bottom">
                         <div class="banner_thumb">
-                            <a href="shop.html"><img src="assets/img/bg/banner10.jpg" alt="#"></a>
+                            <img src="assets/img/bg/pkdt3.jpg" alt="#"></a>
                         </div>
                     </div>
                 </div>
@@ -513,7 +513,7 @@ if (isset($_REQUEST['idSP'])) {
                 </div>
             </div>
         </div>
-        <div class="footer_bottom">
+        <!-- <div class="footer_bottom">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
@@ -533,7 +533,7 @@ if (isset($_REQUEST['idSP'])) {
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </footer>
     <!--footer area end-->
 
