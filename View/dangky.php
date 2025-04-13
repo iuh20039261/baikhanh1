@@ -1,3 +1,11 @@
+<?php
+
+if (file_exists("../Modal/mNguoiDung.php")) {
+    include_once("../Modal/mNguoiDung.php");
+} else {
+    die('Tệp Modal/mNguoiDung.php không tồn tại.');
+}
+?>
 <!doctype html>
 <html class="no-js" lang="en">
 
@@ -8,7 +16,6 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
     <link rel="stylesheet" href="assets/css/plugins.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -543,7 +550,7 @@
                         <ul>
                             <li><a href="index.php">home</a></li>
                             <li>/</li>
-                            <li>sign</li>
+                            <li>Dang ky</li>
                         </ul>
                     </div>
                 </div>
@@ -554,44 +561,63 @@
 
     <!-- customer login start -->
     <div class="customer_login">
-        <div class="container">
-            <div class="row">
-                <!--login area start-->
-                <div class="col-lg-6 col-md-6">
-                    <div class="account_form">
-                        <h2>Login</h2>
-                        <form action="" method="post">
-                            <p>
-                                <label>Username or email <span>*</span></label>
-                                <input type="text" name="txttk">
-                            </p>
-                            <p>
-                                <label>Password <span>*</span></label>
-                                <input type="password" name="txtpass">
-                            </p>
-                            <div class="login_submit">
-                                <button type="submit" name="dangnhap" value="dangnhap">Login</button>
-                            </div>
-                            <?php
-                            if (isset($_REQUEST['dangnhap'])) {
-                                include_once(__DIR__ . '/../Controller/cNguoiDung.php');
-                                $p = new controlNguoiDung();
-                                if ($_REQUEST['txttk'] != '' && $_REQUEST['txtpass'] != '') {
-                                    $kq = $p->getNguoiDung($_REQUEST['txttk'], $_REQUEST['txtpass']);
-                                }
-                            }
-                            ?>
-                        </form>
-                        <p>Don't have an account? <a href="/baikhanh1/View/dangky.php">Click here to register</a></p>
+
+        <!--login area start-->
+
+        <!--register area start-->
+        <!--register area start-->
+        <div class="col-lg-6 col-md-8 mx-auto">
+            <div class="account_form register shadow p-4 rounded">
+                <h2 class="text-center mb-4">Register</h2>
+                <form action="" method="post">
+                    <div class="form-group mb-3">
+                        <label for="txtdk">Tên tài khoản <span class="text-danger">*</span></label>
+                        <input type="text" id="txtdk" name="txtdk" class="form-control" placeholder="Nhập tên tài khoản" required>
                     </div>
-                </div>
+                    <div class="form-group mb-3">
+                        <label for="txtmk">Mật khẩu <span class="text-danger">*</span></label>
+                        <input type="password" id="txtmk" name="txtmk" class="form-control" placeholder="Nhập mật khẩu" required>
+                    </div>
+                    <div class="login_submit text-center">
+                        <button type="submit" name="btnDK" value="dangky" class="btn btn-primary w-100">Register</button>
+                    </div>
+                    <?php
+                    if (isset($_POST['btnDK'])) {
+                        $username = $_POST['txtdk'];
+                        $password = $_POST['txtmk'];
+
+                        // Biểu thức chính quy
+                        $usernamePattern = '/^[a-zA-Z0-9_]{3,20}$/';
+                        $passwordPattern = '/^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/';
+
+                        // Kiểm tra tên tài khoản
+                        if (!preg_match($usernamePattern, $username)) {
+                            echo "<script>alert('Tên tài khoản không hợp lệ. Chỉ cho phép chữ cái, số, dấu gạch dưới và độ dài từ 3 đến 20 ký tự. VD abdcabdc');</script>";
+                        }
+                        // Kiểm tra mật khẩu
+                        elseif (!preg_match($passwordPattern, $password)) {
+                            echo "<script>alert('Mật khẩu không hợp lệ. Mật khẩu phải có ít nhất 8 ký tự, bao gồm chữ hoa, chữ thường, số và ký tự đặc biệt.VD Lethi128@@');</script>";
+                        } else {
+                            // Kiểm tra tài khoản đã tồn tại
+                            include_once('../Controller/cNguoiDung.php');
+                            $pdk = new controlNguoiDung();
+                            if ($pdk->kiemTraTaiKhoanTonTai($username)) {
+                                echo "<script>alert('Tài khoản đã tồn tại. Vui lòng chọn tên tài khoản khác.');</script>";
+                            } else {
+                                // Thêm tài khoản mới
+                                $pdk->themNguoiDung($username, $password);
+                            }
+                        }
+                    }
+                    ?>
+
+                </form>
+                <p class="text-center mt-3">Đã có tài khoản? <a href="/baikhanh1/View/login.php" class="text-primary">Đăng nhập ngay</a></p>
             </div>
         </div>
+        <!--register area end-->
+        <!--register area end-->
     </div>
-    <!--login area start-->
-
-    <!--register area start-->
-
     </div>
     </div>
     <!-- customer login end -->
