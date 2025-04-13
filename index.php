@@ -54,8 +54,10 @@ if (isset($_REQUEST['idSP'])) {
                                 <a href="#">
                                     <?php
                                     if (isset($_SESSION['user'])) {
+                                        // Hiển thị tên tài khoản nếu đã đăng nhập
                                         echo $_SESSION['user'];
                                     } else {
+                                        // Hiển thị "My Account" nếu chưa đăng nhập
                                         echo 'My Account';
                                     }
                                     ?>
@@ -67,24 +69,40 @@ if (isset($_REQUEST['idSP'])) {
 
                                     <?php
                                     if (isset($_SESSION['user'])) {
-                                        // Hiển thị "Sign Out" nếu đã đăng nhập
-                                        echo '<li><a href="?dangxuat">Sign Out</a></li>';
+                                        // Hiển thị tên tài khoản nếu đã đăng nhập
+                                        echo $_SESSION['user'];
                                     } else {
-                                        // Hiển thị "Sign In" nếu chưa đăng nhập
-                                        echo '<li><a href="?dathang">Sign In</a></li>';
+                                        // Hiển thị "My Account" nếu chưa đăng nhập
+                                        echo 'My Account';
                                     }
                                     ?>
+                                    <i class="ion-chevron-down"></i>
+                                    </a>
+                                    <ul class="dropdown_links">
+                                        <li><a href="">My Wish List</a></li>
+                                        <li><a href="">My Account</a></li>
 
-                                    <?php
-                                    // Xử lý đăng xuất
-                                    if (isset($_REQUEST['dangxuat'])) {
-                                        session_destroy();
+                                        <?php
+                                        if (isset($_SESSION['user'])) {
+                                            // Hiển thị "Sign Out" nếu đã đăng nhập
+                                            echo '<li><a href="?dangxuat">Sign Out</a></li>';
+                                        } else {
+                                            // Hiển thị "Sign In" nếu chưa đăng nhập
+                                            echo '<li><a href="?dathang">Sign In</a></li>';
+                                        }
+                                        ?>
 
-                                        echo "<script>window.location.href = '/baikhanh1/index.php';</script>";
-                                    }
-                                    ?>
-                                    <li><a href="admin">Admin Login</a></li>
-                                </ul>
+                                        <?php
+                                        // Xử lý đăng xuất
+                                        if (isset($_REQUEST['dangxuat'])) {
+                                            session_destroy();
+
+
+                                            echo "<script>window.location.href = 'index.php';</script>";
+                                        }
+                                        ?>
+                                        <li><a href="admin">Admin Login</a></li>
+                                    </ul>
                             </li>
                         </ul>
                     </div>

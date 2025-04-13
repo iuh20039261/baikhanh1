@@ -12,8 +12,6 @@ class conn
 		}
 		return $con;
 	}
-
-
 	public function dongketnoi($con)
 	{
 		$con->close(); // Đóng kết nối cơ sở dữ liệu

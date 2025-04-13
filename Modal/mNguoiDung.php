@@ -9,9 +9,6 @@ class modelNguoiDung
       $con = $p->ketnoi();
       $sql = "SELECT * FROM user WHERE user_name = '$user' AND pass = '$pass'";
       $kq = mysqli_query($con, $sql);
-      if (!$kq) {
-         die("Lỗi truy vấn: " . mysqli_error($con));
-      }
       $p->dongketnoi($con); // Đóng kết nối sau khi thực hiện truy vấn
       return $kq;
    }
