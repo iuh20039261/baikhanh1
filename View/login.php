@@ -310,7 +310,7 @@
                         </div>
                         <div class="col-lg-4">
                             <div class="logo">
-                                <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                                <a href="index.php"><h3>Shop phụ kiện điện thoại</h3></a>
                             </div>
                         </div>
                         <div class="col-lg-4">
@@ -464,7 +464,7 @@
                         </div>
                     </div>
                     <div class="logo_container">
-                        <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                        <a href="index.php"><h3>Shop phụ kiện điện thoại</h3></a>
                     </div>
                     <div class="right_menu">
                         <div class="main_menu">

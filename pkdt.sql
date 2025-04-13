@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Jun 29, 2024 at 11:04 PM
--- Server version: 10.4.32-MariaDB
--- PHP Version: 8.2.12
+-- Máy chủ: 127.0.0.1
+-- Thời gian đã tạo: Th4 13, 2025 lúc 05:02 PM
+-- Phiên bản máy phục vụ: 10.4.32-MariaDB
+-- Phiên bản PHP: 8.1.25
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `pkdt`
+-- Cơ sở dữ liệu: `pkdt`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `order`
+-- Cấu trúc bảng cho bảng `order`
 --
 
 CREATE TABLE `order` (
@@ -37,7 +37,7 @@ CREATE TABLE `order` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `order_detail`
+-- Cấu trúc bảng cho bảng `order_detail`
 --
 
 CREATE TABLE `order_detail` (
@@ -49,7 +49,7 @@ CREATE TABLE `order_detail` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `product`
+-- Cấu trúc bảng cho bảng `product`
 --
 
 CREATE TABLE `product` (
@@ -63,7 +63,7 @@ CREATE TABLE `product` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
--- Dumping data for table `product`
+-- Đang đổ dữ liệu cho bảng `product`
 --
 
 INSERT INTO `product` (`product_id`, `type_id`, `name`, `image`, `price`, `cost`, `mota`) VALUES
@@ -107,12 +107,18 @@ INSERT INTO `product` (`product_id`, `type_id`, `name`, `image`, `price`, `cost`
 (43, 5, 'Thẻ nhớ MicroSDXC Sandisk Ultra A1 256GB 150MB/s\r\n', '56.jpg', '579000', '890000', 'Thẻ nhớ MicroSDXC Sandisk Ultra A1 256GB 150Mbs - Truyền tải độ phân giải cao, tốc độ nhanh\r\nThẻ nhớ MicroSDXC Sandisk Ultra A1 256GB 150Mbs cho phép truyền tải hình ảnh và video có độ phân giải cao. Với dung lượng 256GB, người dùng có thể lưu giữ thoải mái và an toàn nhiều dữ liệu, do thẻ nhớ có khả năng chống thấm, chống nhiệt tốt'),
 (44, 5, 'Thẻ nhớ microSD Kingston Class 10 128GB (Không kèm Adapter)\r\n', '57.jpg', '249000', '399000', 'Thẻ nhớ MicroSD Kingston Class 10 128GB (non adapter) - Dung lượng 128GB, sử dụng bền bỉ\r\nThẻ nhớ MicroSD Kingston Class 10 128GB (non adapter) 128GB là một trong những sản phẩm thẻ nhớ được đánh giá cao về dung lượng lớn và tốc độ xử lý nhanh chóng, phục vụ tốt cho các nhu cầu lưu trữ dữ liệu đa dạng của người dùng hiện đại. Sản phẩm không chỉ đáp ứng được các yêu cầu kỹ thuật mà còn mang lại sự tiện lợi và đáng tin cậy trong mọi tình huống sử dụng'),
 (45, 5, 'Thẻ nhớ Micro SDXC Sandisk Extreme Pro V30 A2 200MB/S 128GB\r\n', '58.jpg', '549000', '699000', 'Thẻ nhớ Micro SDXC Sandisk Extreme V30 A2 200MB/S 128GB – Tăng dung lượng lưu trữ\r\nThẻ nhớ Micro SDXC Sandisk Extreme V30 A2 200MB/S 128GB được thiết kế chất lượng cao, bền bỉ, bảo vệ những tài liệu được lưu trữ một cách tốt nhất. Với dung lượng lưu trữ lên đến 128GB cùng tốc độ đọc/ ghi dữ liệu cực nhanh, chiếc thẻ nhớ này sẽ là phụ kiện cần thiết cho nhiều người dùng.'),
-(46, 1, 'Bao da Samsung Galaxy S24 Plus silicon chính hãng\r\n', '14.jpg', '552000', '690000', 'Ốp lưng Samsung Galaxy S24 Plus Silicon - Màu sắc trẻ trung, năng động\r\nNếu bạn đang tìm một phụ kiện bảo vệ cho điện thoại Galaxy S24 Plus thì đừng bỏ qua mẫu ốp lưng silicon chính hãng từ Samsung. Sản phẩm được nghiên cứu riêng cho phiên bản Plus của bộ sưu tập S24 series với những ưu điểm vượt trội về thiết kế và chất liệu. ');
+(46, 1, 'Bao da Samsung Galaxy S24 Plus silicon chính hãng\r\n', '14.jpg', '552000', '690000', 'Ốp lưng Samsung Galaxy S24 Plus Silicon - Màu sắc trẻ trung, năng động\r\nNếu bạn đang tìm một phụ kiện bảo vệ cho điện thoại Galaxy S24 Plus thì đừng bỏ qua mẫu ốp lưng silicon chính hãng từ Samsung. Sản phẩm được nghiên cứu riêng cho phiên bản Plus của bộ sưu tập S24 series với những ưu điểm vượt trội về thiết kế và chất liệu. '),
+(60, 7, 'Cáp Ugreen Type-C to Type-C 100W 1M US288', '26.jpg', ' 390', '340', 'Dây cáp DEVIA Smart 3 đầu sạc - Thiết kế độc đáo, nâng cao hiệu quả sạc\\\\r\\\\nDây cáp DEVIA Smart 3 đầu sạc là một trong những sản phẩm cáp sạc nổi bật của thương hiệu DEVIA. Với thiết kế độc đáo tích hợp 3 đầu sạc khác nhau vào chung một dây sạc, chiếc cáp nhiều cổng này mang lại cho người dùng sự tiện lợi cùng khả năng sạc cực kỳ nhanh chóng.'),
+(61, 7, 'Cáp 3 in 1 Devia Smart Series', '27.jpg', '180', '160', 'Dây cáp DEVIA Smart 3 đầu sạc - Thiết kế độc đáo, nâng cao hiệu quả sạc\\\\r\\\\nDây cáp DEVIA Smart 3 đầu sạc là một trong những sản phẩm cáp sạc nổi bật của thương hiệu DEVIA. Với thiết kế độc đáo tích hợp 3 đầu sạc khác nhau vào chung một dây sạc, chiếc cáp nhiều cổng này mang lại cho người dùng sự tiện lợi cùng khả năng sạc cực kỳ nhanh chóng'),
+(62, 7, 'Dán chống va đập Samsung Galaxy S24 Ultra Mipow Premium Full cao cấp\\\\r\\\\n', '47.jpg', '450', '430', 'Dán cường lực Samsung Galaxy A55 Mocoll Full: độ cứng đáng tin cậy, chạm mượt mà\\\\r\\\\nNếu bạn đang tìm kiếm miếng dán cường lực cho Samsung Galaxy A55 thì đừng bỏ qua sản phẩm của Mocoll. Dán cường lực Mocoll Full hứa hẹn sẽ mang tới trải nghiệm hài lòng cho bạn nhờ được sản xuất từ chất liệu kính cứng với kích thước lý tưởng cho Galaxy A55.'),
+(63, 7, 'Samsung Galaxy A55 dán chống va đập Mocoll Full cao cấp', '56.jpg', '570', '530', 'Thẻ nhớ MicroSDXC Sandisk Ultra A1 256GB 150Mbs - Truyền tải độ phân giải cao, tốc độ nhanh\\\\r\\\\nThẻ nhớ MicroSDXC Sandisk Ultra A1 256GB 150Mbs cho phép truyền tải hình ảnh và video có độ phân giải cao. Với dung lượng 256GB, người dùng có thể lưu giữ thoải mái và an toàn nhiều dữ liệu, do thẻ nhớ có khả năng chống thấm, chống nhiệt tốt'),
+(67, 7, 'Thẻ nhớ Micro SDXC Sandisk Extreme Pro V30 A2 200M', '58.jpg', '549', '539', 'Thẻ nhớ Micro SDXC Sandisk Extreme Pro V30 A2 200M\', \'THẺ NHỚ\', 69, \'Thẻ nhớ Micro SDXC Sandisk Extreme V30 A2 200MB/S 128GB – Tăng dung lượng lưu trữ\\\\r\\\\nThẻ nhớ Micro SDXC Sandisk Extreme V30 A2 200MB/S 128GB được thiết kế chất lượng cao, bền bỉ, bảo vệ những tài liệu được lưu trữ một cách tốt nhất. Với dung lượng lưu trữ lên đến 128GB cùng tốc độ đọc/ ghi dữ liệu cực nhanh, chiếc thẻ nhớ này sẽ là phụ kiện cần thiết cho nhiều người dùng.'),
+(69, 7, 'Thẻ nhớ microSD Kingston Class 10 128GB (Không kèm)', '52.jpg', '289', '259', 'Thẻ nhớ MicroSD Kingston Class 10 128GB (non adapter) - Dung lượng 128GB, sử dụng bền bỉ\\\\r\\\\nThẻ nhớ MicroSD Kingston Class 10 128GB (non adapter) 128GB là một trong những sản phẩm thẻ nhớ được đánh giá cao về dung lượng lớn và tốc độ xử lý nhanh chóng, phục vụ tốt cho các nhu cầu lưu trữ dữ liệu đa dạng của người dùng hiện đại. Sản phẩm không chỉ đáp ứng được các yêu cầu kỹ thuật mà còn mang lại sự tiện lợi và đáng tin cậy trong mọi');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `role`
+-- Cấu trúc bảng cho bảng `role`
 --
 
 CREATE TABLE `role` (
@@ -121,7 +127,7 @@ CREATE TABLE `role` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
--- Dumping data for table `role`
+-- Đang đổ dữ liệu cho bảng `role`
 --
 
 INSERT INTO `role` (`role_id`, `role_name`) VALUES
@@ -131,7 +137,7 @@ INSERT INTO `role` (`role_id`, `role_name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `type_of_product`
+-- Cấu trúc bảng cho bảng `type_of_product`
 --
 
 CREATE TABLE `type_of_product` (
@@ -140,7 +146,7 @@ CREATE TABLE `type_of_product` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
--- Dumping data for table `type_of_product`
+-- Đang đổ dữ liệu cho bảng `type_of_product`
 --
 
 INSERT INTO `type_of_product` (`type_id`, `type_name`) VALUES
@@ -148,12 +154,13 @@ INSERT INTO `type_of_product` (`type_id`, `type_name`) VALUES
 (2, 'Sạc, cáp'),
 (3, 'Sạc dự phòng'),
 (4, 'Dán màn hình'),
-(5, 'Thẻ nhớ');
+(5, 'Thẻ nhớ'),
+(7, 'Sản phẩm bán chạy');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Cấu trúc bảng cho bảng `user`
 --
 
 CREATE TABLE `user` (
@@ -164,7 +171,7 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
--- Dumping data for table `user`
+-- Đang đổ dữ liệu cho bảng `user`
 --
 
 INSERT INTO `user` (`user_id`, `user_name`, `pass`, `role_id`) VALUES
@@ -172,18 +179,18 @@ INSERT INTO `user` (`user_id`, `user_name`, `pass`, `role_id`) VALUES
 (2, 'gia_khanh', 'e10adc3949ba59abbe56e057f20f883e', 2);
 
 --
--- Indexes for dumped tables
+-- Chỉ mục cho các bảng đã đổ
 --
 
 --
--- Indexes for table `order`
+-- Chỉ mục cho bảng `order`
 --
 ALTER TABLE `order`
   ADD PRIMARY KEY (`order_id`),
   ADD KEY `user_id` (`user_id`);
 
 --
--- Indexes for table `order_detail`
+-- Chỉ mục cho bảng `order_detail`
 --
 ALTER TABLE `order_detail`
   ADD PRIMARY KEY (`order_detail_id`),
@@ -191,96 +198,96 @@ ALTER TABLE `order_detail`
   ADD KEY `product_id` (`product_id`);
 
 --
--- Indexes for table `product`
+-- Chỉ mục cho bảng `product`
 --
 ALTER TABLE `product`
   ADD PRIMARY KEY (`product_id`),
   ADD KEY `type_id` (`type_id`);
 
 --
--- Indexes for table `role`
+-- Chỉ mục cho bảng `role`
 --
 ALTER TABLE `role`
   ADD PRIMARY KEY (`role_id`);
 
 --
--- Indexes for table `type_of_product`
+-- Chỉ mục cho bảng `type_of_product`
 --
 ALTER TABLE `type_of_product`
   ADD PRIMARY KEY (`type_id`);
 
 --
--- Indexes for table `user`
+-- Chỉ mục cho bảng `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`user_id`),
   ADD KEY `role_id` (`role_id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT cho các bảng đã đổ
 --
 
 --
--- AUTO_INCREMENT for table `order`
+-- AUTO_INCREMENT cho bảng `order`
 --
 ALTER TABLE `order`
   MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `order_detail`
+-- AUTO_INCREMENT cho bảng `order_detail`
 --
 ALTER TABLE `order_detail`
   MODIFY `order_detail_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `product`
+-- AUTO_INCREMENT cho bảng `product`
 --
 ALTER TABLE `product`
-  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
+  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=70;
 
 --
--- AUTO_INCREMENT for table `role`
+-- AUTO_INCREMENT cho bảng `role`
 --
 ALTER TABLE `role`
   MODIFY `role_id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT for table `type_of_product`
+-- AUTO_INCREMENT cho bảng `type_of_product`
 --
 ALTER TABLE `type_of_product`
-  MODIFY `type_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `type_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT for table `user`
+-- AUTO_INCREMENT cho bảng `user`
 --
 ALTER TABLE `user`
   MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
--- Constraints for dumped tables
+-- Các ràng buộc cho các bảng đã đổ
 --
 
 --
--- Constraints for table `order`
+-- Các ràng buộc cho bảng `order`
 --
 ALTER TABLE `order`
   ADD CONSTRAINT `order_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`user_id`);
 
 --
--- Constraints for table `order_detail`
+-- Các ràng buộc cho bảng `order_detail`
 --
 ALTER TABLE `order_detail`
   ADD CONSTRAINT `order_detail_ibfk_1` FOREIGN KEY (`oder_id`) REFERENCES `order` (`order_id`),
   ADD CONSTRAINT `order_detail_ibfk_2` FOREIGN KEY (`product_id`) REFERENCES `product` (`product_id`);
 
 --
--- Constraints for table `product`
+-- Các ràng buộc cho bảng `product`
 --
 ALTER TABLE `product`
   ADD CONSTRAINT `product_ibfk_1` FOREIGN KEY (`type_id`) REFERENCES `type_of_product` (`type_id`);
 
 --
--- Constraints for table `user`
+-- Các ràng buộc cho bảng `user`
 --
 ALTER TABLE `user`
   ADD CONSTRAINT `user_ibfk_1` FOREIGN KEY (`role_id`) REFERENCES `role` (`role_id`);
