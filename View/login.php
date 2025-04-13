@@ -588,7 +588,6 @@
             </div>
         </div>
     </div>
-    <!--login area start-->
 
     <!--register area start-->
 

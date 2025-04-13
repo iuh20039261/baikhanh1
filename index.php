@@ -54,10 +54,8 @@ if (isset($_REQUEST['idSP'])) {
                                 <a href="#">
                                     <?php
                                     if (isset($_SESSION['user'])) {
-                                        // Hiển thị tên tài khoản nếu đã đăng nhập
                                         echo $_SESSION['user'];
                                     } else {
-                                        // Hiển thị "My Account" nếu chưa đăng nhập
                                         echo 'My Account';
                                     }
                                     ?>

@@ -43,6 +43,6 @@ class controlNguoiDung
         if (mysqli_num_rows($kq) > 0) {
             return true; // Tài khoản đã tồn tại
         }
-        return false; // Tài khoản chưa tồn tại
+        return false;
     }
 }
