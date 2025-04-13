@@ -229,9 +229,8 @@ if (isset($_REQUEST['idSP'])) {
                                     </li>
                                     <li><a href="blog.html">blog <i class="fa fa-angle-down"></i></a>
                                         <ul class="sub_menu pages">
-                                            <li><a href="blog-details.html">blog details</a></li>
-                                            <li><a href="blog-sidebar.html">blog Sidebar</a></li>
-                                            <li><a href="blog-fullwidth.html">blog fullwidth</a></li>
+                                            <li><a href="blog-sp.php">blog sản phẩm</a></li>
+                                            <li><a href="blog-meovat.php">blog mẹo vặt</a></li>
                                         </ul>
                                     </li>
                                     <li><a href="#">pages <i class="fa fa-angle-down"></i></a>
@@ -261,7 +260,7 @@ if (isset($_REQUEST['idSP'])) {
                                 <ul>
                                     <li><a href="#">Specials</a></li>
                                     <li><a href="#">Sneaker</a></li>
-                                    <li><a href="about.html">About us</a></li>
+                                    <li><a href="./View/about.php">About us</a></li>
                                     <li><a href="contact.html">Contact Us</a></li>
                                 </ul>
                             </nav>
