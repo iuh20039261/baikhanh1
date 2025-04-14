@@ -236,7 +236,7 @@
                             <div class="main_menu">
                                 <nav>
                                     <ul>
-                                        <li class="active"><a href="index.php">Home </a></li>
+                                        <li class="active"><a href="../index.php">Home </a></li>
                                         <!-- <li><a href="">shop </a></li> -->
                                         <li><a href="about.php">About Us</a></li>
                                         <!-- <li><a href="">pages <i class="fa fa-angle-down"></i></a>

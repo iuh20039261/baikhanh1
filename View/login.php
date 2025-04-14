@@ -502,10 +502,10 @@
                             <div class="main_menu">
                                 <nav>
                                     <ul>
-                                        <li class="active"><a href="index.php">Home </a></li>
-                                        <li><a href="shop_category.html">shop </a></li>
-                                        <li><a href="about.html">About us</a></li>
-                                        <li><a href="#">pages <i class="fa fa-angle-down"></i></a>
+                                        <li class="active"><a href="../index.php">Home </a></li>
+                                        <!-- <li><a href="shop_category.html">shop </a></li> -->
+                                        <li><a href="./View/about.php">About us</a></li>
+                                        <!-- <li><a href="#">pages <i class="fa fa-angle-down"></i></a>
                                             <ul class="sub_menu pages">
                                                 <li><a href="about.html">About Us</a></li>
                                                 <li><a href="services.html">services</a></li>
@@ -517,11 +517,16 @@
                                                 <li><a href="compare.html">compare</a></li>
                                                 <li><a href="privacy-policy.html">privacy policy</a></li>
                                                 <li><a href="coming-soon.html">coming soon</a></li>
-                                            </ul>
+                                            </ul> -->
                                         </li>
-                                        <li><a href="blog.html">blog</a></li>
+                                        <li><a href="#">blog</a>
+                                                <ul class="sub_menu pages">
+                                                    <li><a href="./View/blog-sp.php">Blog sản phẩm</a></li>
+                                                    <li><a href="./View/blog-meovat.php">blog mẹo vặt</a></li>
 
-                                        <li><a href="contact.html">Contact Us</a></li>
+                                                </ul>
+                                        </li>
+                                        <!-- <li><a href="contact.html">Contact Us</a></li> -->
                                     </ul>
                                 </nav>
                             </div>
