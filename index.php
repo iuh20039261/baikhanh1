@@ -285,7 +285,7 @@ if (isset($_REQUEST['idSP'])) {
                                     <ul>
                                         <li><a href="#">Specials</a></li>
                                         <li><a href="#">Sneaker</a></li>
-                                        <li><a href="about.html">About us</a></li>
+                                        <li><a href="./View/about.php">About us</a></li>
                                         <li><a href="contact.html">Contact Us</a></li>
                                     </ul>
                                 </nav>
@@ -305,9 +305,9 @@ if (isset($_REQUEST['idSP'])) {
                                     <nav>
                                         <ul>
                                             <li class="active"><a href="index.php">Home </a></li>
-                                            <li><a href="">shop </a></li>
-                                            <li><a href="">About Us</a></li>
-                                            <li><a href="">pages <i class="fa fa-angle-down"></i></a>
+                                            <!-- <li><a href="">shop </a></li> -->
+                                            <li><a href="./View/about.php">About Us</a></li>
+                                            <!-- <li><a href="">pages <i class="fa fa-angle-down"></i></a>
                                                 <ul class="sub_menu pages">
                                                     <li><a href="">About Us</a></li>
                                                     <li><a href="">services</a></li>
@@ -320,10 +320,15 @@ if (isset($_REQUEST['idSP'])) {
                                                     <li><a href="">privacy policy</a></li>
                                                     <li><a href="">coming soon</a></li>
                                                 </ul>
-                                            </li>
-                                            <li><a href="">blog</a></li>
+                                            </li> -->
+                                            <li><a href="#">blog</a>
+                                                <ul class="sub_menu pages">
+                                                    <li><a href="./View/blog-sp.php">Blog sản phẩm</a></li>
+                                                    <li><a href="./View/blog-meovat.php">blog mẹo vặt</a></li>
 
-                                            <li><a href="">Contact Us</a></li>
+                                                </ul>
+                                            </li>
+                                            <!-- <li><a href="./View/about.php">Contact Us</a></li> -->
                                         </ul>
                                     </nav>
                                 </div>

@@ -210,7 +210,7 @@
                         </div>
                     </div>
                     <div class="logo_container">
-                        <a href="index.php"><h3>Shop phụ kiện điện thoại</h3></a>
+                        <a href="../index.php"><h3>Shop phụ kiện điện thoại</h3></a>
                     </div>
                     <div class="right_menu">
                         <div class="main_menu">
@@ -236,10 +236,10 @@
                             <div class="main_menu">
                                 <nav>
                                     <ul>
-                                        <li class="active"><a href="index.php">Home </a></li>
-                                        <li><a href="">shop </a></li>
-                                        <li><a href="">About Us</a></li>
-                                        <li><a href="">pages <i class="fa fa-angle-down"></i></a>
+                                        <li class="active"><a href="../index.php">Home </a></li>
+                                        <!-- <li><a href="">shop </a></li> -->
+                                        <li><a href="about.php">About Us</a></li>
+                                        <!-- <li><a href="">pages <i class="fa fa-angle-down"></i></a>
                                             <ul class="sub_menu pages">
                                                 <li><a href="">About Us</a></li>
                                                 <li><a href="">services</a></li>
@@ -252,10 +252,16 @@
                                                 <li><a href="">privacy policy</a></li>
                                                 <li><a href="">coming soon</a></li>
                                             </ul>
-                                        </li>
-                                        <li><a href="">blog</a></li>
+                                        </li> -->
+                                        <li><a href="#">blog</a>
+                                                <ul class="sub_menu pages">
+                                                    <li><a href="blog-sp.php">Blog sản phẩm</a></li>
+                                                    <li><a href="blog-meovat.php">blog mẹo vặt</a></li>
 
-                                        <li><a href="">Contact Us</a></li>
+                                                </ul>
+                                        </li>
+
+                                        <!-- <li><a href="">Contact Us</a></li> -->
                                     </ul>
                                 </nav>
                             </div>

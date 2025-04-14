@@ -237,9 +237,9 @@
                                 <nav>
                                     <ul>
                                         <li class="active"><a href="index.php">Home </a></li>
-                                        <li><a href="">shop </a></li>
-                                        <li><a href="">About Us</a></li>
-                                        <li><a href="">pages <i class="fa fa-angle-down"></i></a>
+                                        <!-- <li><a href="">shop </a></li> -->
+                                        <li><a href="about.php">About Us</a></li>
+                                        <!-- <li><a href="">pages <i class="fa fa-angle-down"></i></a>
                                             <ul class="sub_menu pages">
                                                 <li><a href="">About Us</a></li>
                                                 <li><a href="">services</a></li>
@@ -252,10 +252,16 @@
                                                 <li><a href="">privacy policy</a></li>
                                                 <li><a href="">coming soon</a></li>
                                             </ul>
-                                        </li>
-                                        <li><a href="">blog</a></li>
+                                        </li> -->
+                                        <li><a href="#">blog</a>
+                                                <ul class="sub_menu pages">
+                                                    <li><a href="blog-sp.php">Blog sản phẩm</a></li>
+                                                    <li><a href="blog-meovat.php">blog mẹo vặt</a></li>
 
-                                        <li><a href="">Contact Us</a></li>
+                                                </ul>
+                                        </li>
+
+                                        <!-- <li><a href="">Contact Us</a></li> -->
                                     </ul>
                                 </nav>
                             </div>
@@ -340,42 +346,44 @@
             </div>
         </div>
     </div>
-    <!--banner area end-->
-        <!--Intruduce shop-->
+   <!--banner area end-->
+        <!--Introduce shop-->
         <div class="intruduce_shop" style="font-family: Arial, sans-serif; background-color: #f7f7f7; margin: 0; padding: 0; line-height: 1.7;">
-
             <div style="max-width: 900px; margin: 0 auto; padding: 40px 20px; background-color: #fff;">
-        <h1 style="color: #0d6efd; text-align: center; margin-bottom: 30px;">iPhone 14 Pro Max – Siêu phẩm công nghệ vượt thời đại</h1>
+                <h1 style="color: #0d6efd; text-align: center; margin-bottom: 30px;">Cáp sạc Baseus Crystal Shine USB-A to Lightning 1.2M – Vừa đẹp vừa bền, sạc siêu nhanh</h1>
+                Viết bởi: Quản trị viên Shop Phụ Kiện Điện Thoại<br>
+                Ngày đăng: 14/04/2025 <br>
+                <img src="../assets/image/cap-baseus-crystal-shine-usb-a-to-lightning-2.jpg"
+                    alt="Cáp Baseus Crystal Shine"
+                 style="width: 300px; height: auto; margin: 20px 0; border-radius: 10px; display: block; margin-left: auto; margin-right: auto;">
 
-        <img src="../assets/image/59.jpg"
-            alt="iPhone 14 Pro Max"
-            style="width: 200px; height: auto; margin: 20px 0; border-radius: 10px;">
+                <p><strong>Baseus Crystal Shine</strong> là dòng cáp sạc cao cấp dành cho người dùng iPhone/iPad, mang đến sự kết hợp giữa tốc độ sạc nhanh, thiết kế thời trang và độ bền vượt trội.</p>
 
-        <p><strong>iPhone 14 Pro Max</strong> là mẫu điện thoại cao cấp nhất của Apple ra mắt vào cuối năm 2022, mang đến sự kết hợp hoàn hảo giữa thiết kế sang trọng, hiệu năng mạnh mẽ và công nghệ tiên tiến.</p>
+                <h3 style="color: #333; margin-top: 30px;">Thiết kế thời thượng – Tỏa sáng mọi góc nhìn</h3>
+                <p>Với lớp vỏ bọc dây bằng sợi dù cao cấp kết hợp đầu cắm hợp kim nhôm sáng bóng, Crystal Shine không chỉ đẹp mà còn chống gãy rối hiệu quả. Thiết kế đầu cáp tinh xảo mang đến cảm giác cao cấp ngay từ cái nhìn đầu tiên.</p>
 
-        <h3 style="color: #333; margin-top: 30px;">Thiết kế sang trọng – Đậm chất "Pro"</h3>
-        <p>iPhone 14 Pro Max sở hữu thiết kế khung thép không gỉ bóng bẩy, mặt lưng kính mờ sang trọng và cụm camera sau lớn hơn giúp tăng khả năng chụp ảnh. Điểm nổi bật là phần notch đã được thay thế bằng <strong>Dynamic Island</strong> – thiết kế mới đầy sáng tạo vừa đẹp mắt vừa tiện ích.</p>
+                <h3 style="color: #333; margin-top: 30px;">Sạc nhanh 2.4A – An toàn và ổn định</h3>
+                <p>Cáp hỗ trợ dòng điện lên tới 2.4A, đảm bảo tốc độ sạc nhanh chóng mà vẫn giữ an toàn cho thiết bị. Tích hợp chip thông minh giúp kiểm soát dòng điện và nhiệt độ trong quá trình sử dụng.</p>
 
-        <h3 style="color: #333; margin-top: 30px;">Màn hình Super Retina XDR 120Hz</h3>
-        <p>Máy được trang bị màn hình OLED 6.7 inch với độ sáng tối đa lên đến 2000 nits, hỗ trợ công nghệ ProMotion 120Hz giúp hiển thị mượt mà và rõ nét trong mọi điều kiện ánh sáng.</p>
+                <h3 style="color: #333; margin-top: 30px;">Tương thích tuyệt đối với thiết bị Apple</h3>
+                <p>Cáp sử dụng đầu Lightning đạt chuẩn MFi, tương thích tốt với iPhone, iPad và iPod. Không xuất hiện lỗi không nhận sạc hoặc thông báo phụ kiện không được hỗ trợ.</p>
 
-        <h3 style="color: #333; margin-top: 30px;">Camera nâng cấp 48MP</h3>
-        <p>Camera chính của iPhone 14 Pro Max đã được nâng cấp lên 48MP, mang lại chất lượng ảnh vượt trội, hỗ trợ quay video 4K cực kỳ sắc nét. Chế độ chụp ban đêm và chụp chân dung được cải thiện rõ rệt so với thế hệ trước.</p>
+                <h3 style="color: #333; margin-top: 30px;">Chiều dài lý tưởng – Linh hoạt mọi nơi</h3>
+                <p>Chiều dài 1.2 mét giúp bạn dễ dàng sử dụng trong xe hơi, ở văn phòng hoặc tại nhà mà không bị hạn chế bởi độ dài dây.</p>
 
-        <h3 style="color: #333; margin-top: 30px;">Hiệu năng mạnh mẽ với chip A16 Bionic</h3>
-        <p>Bên trong là bộ vi xử lý A16 Bionic – con chip mạnh nhất hiện nay của Apple. Với hiệu suất vượt trội, iPhone 14 Pro Max xử lý mượt mà mọi tác vụ từ chơi game nặng, chỉnh sửa video cho đến các công việc đa nhiệm.</p>
+                <h3 style="color: #333; margin-top: 30px;">Đa dạng màu sắc – Cá tính riêng biệt</h3>
+                <p>Cáp được sản xuất với nhiều màu sắc nổi bật như đen, đỏ, xanh navy và bạc, cho bạn tha hồ lựa chọn phong cách riêng của mình.</p>
 
-        <h3 style="color: #333; margin-top: 30px;">Pin khỏe và nhiều tính năng thông minh</h3>
-        <p>iPhone 14 Pro Max có thời lượng pin tốt, hỗ trợ sạc nhanh và sạc không dây MagSafe. Ngoài ra, máy còn được tích hợp các tính năng như phát hiện va chạm, gọi SOS khẩn cấp qua vệ tinh và Face ID siêu nhạy.</p>
+                <h3 style="color: #333; margin-top: 30px;">Giá bán tại Việt Nam</h3>
+                <p>Hiện tại, <strong>Baseus Crystal Shine 1.2M</strong> có mức giá dao động từ <strong>100.000 – 150.000 đồng</strong> tùy màu sắc và cửa hàng phân phối.</p>
 
-        <h3 style="color: #333; margin-top: 30px;">Giá bán tại Việt Nam</h3>
-        <p>Tại thời điểm ra mắt, iPhone 14 Pro Max có giá dao động từ <strong>29 triệu đồng</strong> đến <strong>46 triệu đồng</strong> tùy phiên bản bộ nhớ và màu sắc.</p>
+                <p>Với thiết kế đẹp mắt, độ bền cao và khả năng sạc nhanh đáng tin cậy, đây chắc chắn là món phụ kiện không thể thiếu cho người dùng thiết bị Apple.</p>
 
-        <p>Với những cải tiến vượt bậc, iPhone 14 Pro Max xứng đáng là sự lựa chọn hàng đầu cho người dùng yêu thích sự đẳng cấp và công nghệ hiện đại.</p>
-
-        <div style="text-align: right; font-style: italic; color: #888; margin-top: 40px;">
-        Viết bởi: Quản trị viên Shop Điện Thoại<br>
-        Ngày đăng: 14/04/2025
+                <div style="text-align: right; font-style: italic; color: #888; margin-top: 40px;">
+                    Bài viết bởi Shop Phụ Kiện Điện Thoại
+                </div>
+            </div>
+        </div>
         </div>
     </div>
             <br>
