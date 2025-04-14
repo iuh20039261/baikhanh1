@@ -666,7 +666,7 @@
                                             <div class="mailchimp-submitting"></div><!-- mailchimp-submitting end -->
                                             <div class="mailchimp-success"></div><!-- mailchimp-success end -->
                                             <div class="mailchimp-error"></div><!-- mailchimp-error end -->
-                                        </div><!-- mailchimp-alerts end -->
+                                        </div>
                                     </div>
                                 </div>
                             </div>

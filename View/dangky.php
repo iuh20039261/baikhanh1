@@ -586,7 +586,7 @@ if (file_exists("../Modal/mNguoiDung.php")) {
                         $username = $_POST['txtdk'];
                         $password = $_POST['txtmk'];
 
-                        // Biểu thức chính quy
+                        // Biểu thức chín
                         $usernamePattern = '/^[a-zA-Z0-9_]{3,20}$/';
                         $passwordPattern = '/^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/';
 

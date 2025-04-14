@@ -26,7 +26,8 @@ class controlNguoiDung
     }
     public function themNguoiDung($username, $pass2)
     {
-        $passMd5 = md5($pass2); // Mã hóa mật khẩu
+        $passMd5 = md5($pass2);
+        // Mã hóa mật khẩu
         $p = new modelNguoiDung();
         $kq = $p->insertNguoiDung($username, $passMd5); // Gọi phương thức thêm người dùng
         if ($kq) {
