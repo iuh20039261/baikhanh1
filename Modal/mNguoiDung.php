@@ -9,7 +9,7 @@ class modelNguoiDung
       $con = $p->ketnoi();
       $sql = "SELECT * FROM user WHERE user_name = '$user' AND pass = '$pass'";
       $kq = mysqli_query($con, $sql);
-      $p->dongketnoi($con); // Đóng kết nối sau khi thực hiện truy vấn
+      $p->dongketnoi($con); // Đónkết nối sau khi thực hiện truy vấn
       return $kq;
    }
    public function insertNguoiDung($username, $pass2)
